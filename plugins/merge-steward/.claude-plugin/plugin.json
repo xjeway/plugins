@@ -1,0 +1,8 @@
+{
+  "name": "merge-steward",
+  "description": "One long-running steward session reviews, verifies and merges branches from many parallel Claude Code sessions into an integration branch.",
+  "version": "0.1.0",
+  "author": { "name": "Jeway" },
+  "license": "MIT",
+  "keywords": ["git", "merge", "parallel", "worktree", "sessions"]
+}

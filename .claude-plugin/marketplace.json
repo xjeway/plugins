@@ -1,0 +1,17 @@
+{
+  "name": "plugins",
+  "owner": { "name": "Jeway" },
+  "metadata": {
+    "description": "Jeway's Claude Code plugins.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "merge-steward",
+      "description": "One long-running steward session reviews, verifies and merges branches from many parallel Claude Code sessions into an integration branch.",
+      "version": "0.1.0",
+      "author": { "name": "Jeway" },
+      "source": "./plugins/merge-steward"
+    }
+  ]
+}
