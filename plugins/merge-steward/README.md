@@ -31,7 +31,7 @@ Commit `.claude/steward.json`:
 | `approval.mode` | `risky` | `risky`: only risky requests wait for you; `always`; `never`. |
 | `approval.riskyPaths` | `[]` | globs that make a request risky. |
 | `approval.riskyWhenDeletingFiles` | `true` | deleting any file makes a request risky. |
-| `approval.rules` | `[]` | plain-language rules the steward checks while reviewing. |
+| `approval.rules` | `[]` | plain-language rules the steward checks while reviewing. It also follows any "ask the human first" rules already in the project's CLAUDE.md / AGENTS.md, so there is no need to repeat them here. |
 | `promote.everyNMerges` | `5` | open the integration → main PR after this many merges. |
 
 In `steward submit`'s rebase, auto-resolution continues with `git rebase --continue`, which can run the repository's commit hooks; if a hook fails, the rebase is aborted and the worker resolves the conflicts by hand as usual.
